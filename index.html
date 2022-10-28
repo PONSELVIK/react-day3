@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p> 
+        Difference between Axios and fetch
+        <pre>
+
+        
+        Axios :
+            Axios is a Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6. It can be used intercept HTTP requests and responses and enables client-side protection against XSRF. It also has the ability to cancel requests. EX:: axios.get('url') .then((response) => {
+
+	// Code for handling the response
+})
+.catch((error) => {
+
+	// Code for handling the error
+})
+Fetch:
+The Fetch API provides a fetch() method defined on the window object. It also provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline (requests and responses). The fetch method has one mandatory argument- the URL of the resource to be fetched. This method returns a Promise that can be used to retrieve the response of the request. EX:: fetch('path-to-the-resource-to-be-fetched') .then((response) => {
+
+	// Code for handling the response
+})
+.catch((error) => {
+
+	// Code for handling the error
+});
+</pre>
+    </p>
+    <p>What is useEffect Hook ?</p>
+    
+    <p>
+        useEffect :It allows us to implement all of the lifecycle hooks from within a single function API. // this will run when the component mounts and anytime the stateful data changes React.useEffect(() => { alert('Hey, Nads here!'); });
+
+// this will run, when the component is first initialized React.useEffect(() => { alert('Hey, Nads here!'); }, []);
+
+// this will run only when count state changes React.useEffect(() => { fetch('nads').then(() => setLoaded(true)); }, [count]);
+
+// this will run when the component is destroyed or before the component is removed from UI. React.useEffect(() => { alert('Hey, Nads here'); return () => alert('Goodbye Component'); });
+    </p>
+    <p>What is UseState Hook ?</p>
+    <p>
+        The React useState Hook allows us to track state in a function component.State generally refers to data or properties that need to be tracking in an application.
+    </p>
+    <p>What is UseReducer Hook ?</p>
+    <p>It does very similiar to setState, It's a different way to manage state using Redux Pattern. Instead of updating the state directly, we dispatch actions, that go to a reducer function, and this function figure out, how to compute the next state.
+
+    </p>
+</body>
+</html>
